@@ -1,0 +1,448 @@
+/* =============================
+   🌿 NAVIGATION BAR STYLES
+   ============================= */
+
+/* --- Navbar Base --- */
+nav {
+  position: fixed; /* Fix the navbar at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000; /* Increase z-index for fixed nav */
+  width: 100%; /* Adjust width to fit content */
+  max-width: 1400px; /* Centered content width */
+  margin: 10px auto; /* Center the navbar */
+  border-radius: 50px; /* Maintain rounded edges */
+  background: rgba(255, 255, 255, 0.42); /* Transparent background */
+  backdrop-filter: blur(10px); /* Blur effect for transparency */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Border for glass effect */
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  padding: 10px 20px; /* Adjust padding for better spacing */
+  font-weight: bold;
+}
+
+/* Removed color change on scroll */
+nav.scrolled {
+  background: rgba(255, 255, 255, 0.2); /* Keep glassmorphism style */
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Container */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto; /* Center content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+  position: relative;
+  display: inline-block;
+}
+
+.logo-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 48px 16px rgba(255, 255, 255, 0.7),
+    0 0 16px 4px rgba(255, 255, 255, 0.95);
+  opacity: 0.7;
+  transition: opacity 0.4s;
+}
+
+.logo:hover .logo-glow {
+  opacity: 1;
+}
+
+.logo img {
+  position: relative;
+  z-index: 1;
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  box-shadow: none;
+  transition: box-shadow 0.4s;
+}
+
+/* --- Nav Links --- */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Adjust gap between links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(54, 54, 54); /* Black text */
+  font-weight: 500;
+  padding: 8px 15px; /* Adjust padding for links */
+  border-radius: 20px; /* Rounded links */
+  transition: all 0.3s;
+  position: relative;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  background: #ffffff; /* White background */
+  color: #000000; /* Black text */
+  box-shadow: 0 4px 24px rgba(255, 255, 255, 0.2); /* Subtle shadow */
+}
+
+.nav-links a.home-nav:hover {
+  background: transparent;
+  color: #222222;
+  box-shadow: none;
+}
+
+/* Underline effect */
+.nav-links a::after {
+  content: "";
+  display: none;
+}
+
+/* --- Burger Menu (Mobile) --- */
+.burger {
+  display: none;
+  cursor: pointer;
+  z-index: 2100; /* Ensure burger is above nav */
+  position: fixed;
+  top: 18px;
+  right: 18px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* --- Dropdown Menu --- */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark dropdown */
+  border-radius: 20px; /* Rounded dropdown */
+  min-width: 220px;
+  box-shadow: 0 8px 32px rgba(122, 44, 178, 0.1);
+  border: 1px solid #f3e7e9;
+  list-style: none;
+  padding: 10px 0;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+}
+
+.dropdown-content li {
+  width: 100%;
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 10px 15px;
+  color: #ffffff; /* White text */
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.dropdown-content li a:hover {
+  background-color: #ffffff; /* White hover */
+  color: #000000; /* Black text */
+}
+
+/* Show dropdown on hover (desktop) */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* =============================
+   📱 RESPONSIVE
+   ============================= */
+
+@media screen and (max-width: 768px) {
+  nav {
+    width: 100vw;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+    padding: 5px 0;
+    min-height: 48px;
+    left: 0;
+    right: 0;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+  }
+
+  .nav-container {
+    width: 100vw;
+    max-width: none;
+    margin: 0;
+    padding: 0 6px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .logo {
+    padding: 2px 6px;
+    border-radius: 30px;
+  }
+
+  .logo img {
+    height: 38px;
+    width: auto;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 210px;
+    background: rgba(255, 255, 255, 0.97);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    padding-top: 70px;
+    gap: 10px; /* Adjust gap for vertical layout */
+    transition: right 0.3s ease-in-out;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+  }
+
+  .nav-links.nav-active {
+    right: 0;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .burger {
+    display: block;
+    position: fixed;
+    right: 18px;
+    top: 18px;
+    z-index: 2100;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .burger div {
+    width: 22px;
+    height: 3px;
+    background-color: #222;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+
+  .nav-links a {
+    color: #222; /* Always green in mobile menu */
+    background: transparent;
+    font-size: 1rem;
+    padding: 10px 18px;
+    border-radius: 12px;
+    width: 100%;
+    display: block;
+    text-align: left;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    background: #f3e7e9;
+    color: #7a2cb2;
+  }
+
+  /* Remove duplicate dropdown styles */
+  .dropdown-content,
+  .dropdown-submenu {
+    position: static;
+    background: transparent;
+    width: 100%;
+    display: none;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+  }
+
+  .dropdown.active .dropdown-content,
+  .dropdown-sub.active .dropdown-submenu {
+    display: block;
+  }
+
+  /* Dropdown fix for mobile */
+  .dropdown-content li a {
+    padding-left: 30px;
+    color: #222 !important; /* Dark text for white background */
+  background: transparent;
+  }
+
+  .dropdown-content li + li {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .dropdown.open .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-submenu {
+    position: static;
+    background: transparent;
+    width: 100%;
+    display: none;
+    padding-left: 18px;
+  }
+
+  .dropdown-sub.open .dropdown-submenu {
+    display: block;
+  }
+
+  .dropdown-sub > a::after {
+    float: right;
+  }
+
+  /* Animation for Nav Links */
+  .nav-links li {
+    animation: navLinkFade 0.5s ease forwards;
+  }
+}
+
+/* Burger menu animation */
+.burger.open div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* =============================
+   🧭 PROJECTS SUBMENU STYLES
+   ============================= */
+
+/* Parent dropdown already styled (dropdown + dropdown-content) */
+
+/* Submenu (Second level) */
+.dropdown-sub {
+  position: relative;
+}
+
+.dropdown-submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark submenu */
+  border-radius: 20px; /* Rounded submenu */
+  min-width: 220px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f3e7e9;
+  list-style: none;
+  padding: 10px 0;
+}
+
+.dropdown-submenu li a {
+  display: block;
+  padding: 10px 15px;
+  color: #8b8b8b !important; /* Dark text for white background */
+  background: transparent;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.dropdown-submenu li a:hover {
+  background-color: #ffffff; /* White hover */
+  color: #000000; /* Black text */
+}
+
+/* Show submenu on hover (desktop) */
+.dropdown-sub:hover .dropdown-submenu {
+  display: block;
+}
+
+/* Arrow pointer for submenu */
+.dropdown-sub > a::after {
+  float: right;
+  display: flex;
+  font-size: 0.8em;
+}
+
+/* =============================
+   📱 RESPONSIVE FIXES FOR SUBMENU
+   ============================= */
+@media screen and (max-width: 768px) {
+  .dropdown-submenu {
+    position: static;
+    box-shadow: none;
+    background: transparent;
+    border: none;
+    padding: 5px 0;
+  }
+
+  .dropdown-sub.open .dropdown-submenu {
+    display: block;
+  }
+
+  .dropdown-sub > a::after {
+    float: right;
+  }
+}
+
+/* Keyframe Animation for Nav Links */
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Ensure dropdown menus work properly on desktop */
+@media screen and (min-width: 769px) {
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-sub:hover .dropdown-submenu {
+    display: block;
+  }
+}

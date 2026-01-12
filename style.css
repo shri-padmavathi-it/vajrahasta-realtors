@@ -1,0 +1,364 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(120deg, #f8fafc 0%, #f3e7e9 100%);
+  color: #222;
+}
+
+/* Home Section Hero */
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(120deg, #f8fafc 0%, #ffe2da 100%);
+  min-height: 100%;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Left Text */
+.home-text {
+  flex: 1;
+  padding: 0 40px;
+  z-index: 2;
+  color: #1a1a1a;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.home-text h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.home-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Smooth Shake / Floating Motion */
+@keyframes smoothShake {
+  0% {
+    transform: scale(1.05) translate(0, 0);
+  }
+  25% {
+    transform: scale(1.06) translate(5px, -3px);
+  }
+  50% {
+    transform: scale(1.05) translate(-5px, 4px);
+  }
+  75% {
+    transform: scale(1.06) translate(3px, -4px);
+  }
+  100% {
+    transform: scale(1.05) translate(0, 0);
+  }
+}
+
+/* Modern Glass Button */
+.btn,
+.learn-more-btn {
+  display: inline-block;
+  padding: 14px 40px;
+  background: rgba(120, 107, 129, 0.85);
+  background: linear-gradient(
+    135deg,
+    rgba(122, 44, 178, 0.85),
+    rgba(212, 74, 74, 0.85)
+  );
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+  transition: all 0.4s ease;
+}
+
+.btn:hover,
+.learn-more-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+    135deg,
+    rgba(212, 74, 74, 0.85),
+    rgba(122, 44, 178, 0.85)
+  );
+}
+
+/* Hero Image */
+.home-image {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.core-icon img {
+  width: 300px; /* adjust as needed */
+  height: 200px;
+  object-fit: contain;
+}
+
+.home-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to top right,
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.1)
+  );
+  z-index: 1;
+}
+
+.home-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(1.1);
+  transition: transform 1.2s ease, filter 0.8s ease;
+}
+
+.home-image img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+  #home {
+    flex-direction: column;
+    padding-top: 70px;
+  }
+
+  .home-text {
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .home-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-text p {
+    font-size: 1rem;
+  }
+
+  .home-image {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .home-image img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* Hero Slider */
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.05);
+  transition: transform 6s ease;
+}
+
+/* Apply to Hero Slider Images */
+.slide.active img {
+  animation: smoothShake 8s ease-in-out infinite;
+  transform-origin: center;
+  filter: brightness(1.1);
+}
+
+/* Dark Overlay */
+.slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.65)
+  );
+  z-index: 1;
+}
+
+/* Caption */
+.slide-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+  max-width: 750px;
+  padding: 20px;
+  animation: fadeUp 1s ease forwards;
+}
+
+.slide-caption h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.slide-caption p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+.slide-caption .btn {
+  display: inline-block;
+ background: linear-gradient(
+    135deg,
+    rgba(255, 174, 25, 0.85),
+     rgba(255, 174, 25, 0.85)
+  );
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 14px 38px;
+  border-radius: 50px;
+  transition: all 0.4s ease;
+}
+
+.slide-caption .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(121, 81, 231, 0.4);
+}
+
+/* Navigation Arrows */
+.slider-arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.arrow {
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 18px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+  user-select: none;
+  pointer-events: all;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Dots */
+.dots-container {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  z-index: 4;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: #e76f51;
+  transform: scale(1.3);
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .slide-caption h1 {
+    font-size: 2rem;
+  }
+  .slide-caption p {
+    font-size: 1rem;
+  }
+  .arrow {
+    font-size: 1.8rem;
+    padding: 8px 14px;
+  }
+}
+
+#contact {
+  background-color: #264653;
+  color: #fff;
+}

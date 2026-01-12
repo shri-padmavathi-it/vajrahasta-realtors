@@ -1,0 +1,118 @@
+/* Footer Styles */
+footer {
+  background: #111;           /* Dark background for contrast */
+  color: #fff;
+  padding-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;            /* Stacks columns on mobile */
+  justify-content: space-between;
+  padding: 0 20px 40px 20px;
+  gap: 30px;
+}
+
+.footer-col {
+  flex: 1 1 250px;            /* Ensures columns are responsive */
+  margin-bottom: 10px;
+}
+
+/* Headings */
+.footer-col h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.footer-col h4 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ffae19;             /* Your brand orange */
+  position: relative;
+  font-weight: 600;
+}
+
+/* Text & Paragraphs */
+.footer-col p {
+  color: #ccc;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+/* Quick Links List */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffae19;             /* Orange on hover */
+  padding-left: 6px;          /* Subtle slide effect */
+}
+
+/* Icons in Contact Section */
+.footer-col i {
+  color: #ffae19;
+  margin-right: 10px;
+  width: 20px;
+  text-align: center;
+}
+
+/* Social Media Buttons */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 50%;         /* Circular buttons */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #ffae19;        /* Orange background on hover */
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.social-links a i {
+  margin: 0;                  /* Reset icon margin for social buttons */
+}
+
+/* Bottom Copyright Bar */
+.footer-bottom {
+  background: #000;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+}

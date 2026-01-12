@@ -1,0 +1,500 @@
+/* Section Background */
+#about {
+  background: #FAF9F6;
+  padding: 120px 0;
+  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main container matches nav/hero width */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Header */
+.about-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #000000;
+  letter-spacing: 1px;
+}
+
+.about-header p {
+  font-size: 1.15rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Stats */
+.about-stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 0 50px 0;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: #fff;
+  padding: 28px 36px;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(122, 44, 178, 0.08);
+  width: 230px;
+  transition: transform 0.3s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.3s;
+  text-align: center;
+}
+
+.stat-box:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(122, 44, 178, 0.12);
+}
+
+.stat-box h3 {
+  font-size: 2.2rem;
+  color: #FFCC00;
+  margin-bottom: 8px;
+}
+
+.stat-box p {
+  color: #666;
+  font-weight: 500;
+  font-size: 1.08rem;
+}
+
+/* Intro Paragraph */
+.about-intro {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  font-size: 1.13rem;
+  color: #444;
+  line-height: 1.7;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  padding: 24px 18px;
+  box-shadow: 0 2px 8px rgba(122, 44, 178, 0.06);
+}
+
+/* Mission strip full width, content centered */
+.mission-strip {
+  width: 100%;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50%;
+  margin-right: -50%;
+  background: linear-gradient(90deg, #fce4ec 0%, #e8f4fc 100%);
+  padding: 48px 0;
+  box-shadow: 0 4px 16px rgba(122, 44, 178, 0.08);
+  margin-bottom: 50px;
+}
+
+.mission-strip-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mission-content {
+  width: 100%;
+  text-align: center;
+}
+
+.mission-content h3 {
+  color: #2D2D2D;
+  margin-bottom: 14px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.mission-content p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1.15rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Core Values as horizontal cards */
+.core-values {
+  margin-bottom: 40px;
+  padding: 80px 0 70px 0; /* extra padding for balance */
+  width: 100vw;
+
+  /* 🔹 Full-width soft gradient background */
+  background: #000000;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-shadow: 0 4px 20px rgba(122, 44, 178, 0.08);
+}
+
+
+.core-values h3 {
+  color: #e2e2e2;
+  margin-bottom: 18px;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.values-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.value-card {
+  background: #fff;
+  padding: 22px 32px 18px 32px;
+  border-radius: 25px;
+  box-shadow: 0 2px 8px rgba(122, 44, 178, 0.08);
+  font-weight: 600;
+  font-size: 1.08rem;
+  transition: transform 0.3s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.3s;
+  min-width: 200px;
+  text-align: center;
+  color: #264653;
+  border: 1.5px solid #f3e7e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.value-card .core-icon {
+  font-size: 2.1rem;
+  margin-bottom: 12px;
+  color: #d44a4a;
+  display: block;
+}
+
+.value-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 32px rgba(122, 44, 178, 0.1);
+  border-color: #d44a4a;
+}
+
+/* Expertise */
+.about-expertise {
+  width: 100%;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50%;
+  margin-right: -50%;
+
+  border-radius: 0;
+  padding: 100px 0;
+  margin-bottom: 40px;
+}
+
+.about-expertise > * {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.about-expertise h3 {
+  font-size: 2.5rem;
+  color: #2D2D2D;
+  margin-bottom: 28px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.expertise-grid {
+  display: flex;             /* Changed from grid to flex */
+  flex-wrap: wrap;           /* Allows cards to wrap to the next line */
+  justify-content: center;   /* Centers the cards horizontally */
+  gap: 40px;                 /* Increased gap for better spacing */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 2. Update Card Sizing for Flexbox */
+.expertise-card {
+  flex: 0 1 300px;           /* Flex-grow: 0, Flex-shrink: 1, Basis: 300px */
+  width: 300px;              /* Sets a fixed width preference */
+  min-height: 300px;         /* Ensures they are tall enough (good for circles) */
+  
+  /* Keep your existing styles */
+  background: rgba(255, 255, 255, 0.85);
+  border: 1.5px solid #f3e7e9;
+  border-radius: 50%;        /* Keeps them circular (if you want circles) */
+                             /* Change to 20px if you want rounded rectangles */
+  box-shadow: 0 4px 18px rgba(122, 44, 178, 0.08);
+  padding: 40px 30px;
+  
+  /* Alignment inside the card */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.expertise-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(212, 74, 74, 0.13);
+  border-color: #d44a4a;
+}
+
+.expertise-icon {
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  color: #008FB3;
+}
+
+.expertise-title {
+  font-weight: 700;
+  font-size: 1.18rem;
+  color: #264653;
+  margin-bottom: 8px;
+}
+
+.expertise-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Button */
+.about-btn {
+  margin-top: 30px;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  background: rgba(255, 174, 25, 0.85);
+  color: rgb(255, 255, 255);
+  padding: 14px 36px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.08rem;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 16px rgba(122, 44, 178, 0.08);
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  border: none;
+  outline: none;
+}
+
+.learn-more-btn:hover {
+  background: linear-gradient(90deg, #ffa53e 0%, #fff458 100%);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(212, 74, 74, 0.12);
+}
+
+/* Vision Section */
+.vision-section {
+  max-width: 900px;
+  margin: 48px auto 40px auto;
+  padding: 38px 28px 28px 28px;
+  text-align: center;
+}
+
+.vision-icon {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  color: #d44a4a;
+}
+
+.vision-title {
+  color: #b967f3;
+  font-size: 1.6rem;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+}
+
+.vision-text {
+  color: #555;
+  font-size: 1.13rem;
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-container,
+  .mission-strip-inner {
+    max-width: 98%;
+    padding: 0 10px;
+  }
+  .values-cards {
+    gap: 12px;
+  }
+  .value-card {
+    min-width: 140px;
+    font-size: 0.98rem;
+    padding: 12px 10px;
+  }
+  .about-stats {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-header h2 {
+    font-size: 2rem;
+  }
+  .about-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .values-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .mission-strip-inner {
+    text-align: center;
+  }
+  .mission-content p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .expertise-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .expertise-card {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.mission-vision-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  flex-wrap: wrap; /* stacks on smaller screens */
+}
+
+.mission-strip,
+.vision-section {
+  flex: 1 1 45%; /* take roughly half width each, shrink if needed */
+  box-sizing: border-box;
+}
+
+.mission-strip {
+  margin-bottom: 0; /* remove extra margin when side by side */
+}
+
+.vision-section {
+  background: linear-gradient(90deg, #fce4ec 0%, #e8f4fc 100%);
+  padding: 36px 24px;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(122, 44, 178, 0.08);
+  text-align: left;
+}
+
+.vision-section .vision-icon {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  color: #d44a4a;
+}
+
+.vision-section .vision-title {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #b752ff;
+  font-weight: 600;
+}
+
+.vision-section .vision-text {
+  font-size: 1.13rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .mission-vision-container {
+    flex-direction: column;
+  }
+
+  .mission-strip,
+  .vision-section {
+    flex: 1 1 100%;
+  }
+
+  .vision-section {
+    text-align: center;
+  }
+}
+
+/* Mission & Vision Section */
+.mission-vision-section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  padding: 80px 20px;
+  background: #f8fafc00; /* light background */
+  flex-wrap: wrap; /* responsive wrap on smaller screens */
+}
+
+.mv-card {
+  background: #fff;
+  flex: 1 1 300px; /* allow cards to shrink/grow, min width 300px */
+  max-width: 450px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 30px 25px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.mv-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.mv-icon {
+  font-size: 3rem;
+  color: #008FB3; /* primary accent color */
+  margin-bottom: 20px;
+}
+
+.mv-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #222;
+  font-weight: 700;
+}
+
+.mv-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .mission-vision-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 20px;
+  }
+}

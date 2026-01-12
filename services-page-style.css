@@ -1,0 +1,246 @@
+#services {
+  padding: 80px 20px;
+  background: #000000;
+  overflow: hidden;
+}
+
+#services h2 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
+  color: #FAF9F6;
+  font-weight: 700;
+}
+
+.services-cards-slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+.slider-track {
+  display: flex;
+  gap: 30px;
+  align-items: stretch; /* Added: This forces all cards to be equal height */
+  animation: continuousScroll 40s linear infinite;
+  width: fit-content;
+}
+
+.slider-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes continuousScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Project Card Styles */
+.project-card {
+  display: flex;            /* Keep this */
+  flex-direction: column;   /* Keep this */
+  /* height: 100%;  <-- REMOVE THIS LINE */
+  height: auto;             /* Added: Allows the card to stretch naturally */
+  
+  /* ... existing styles ... */
+  min-width: 350px;
+  background: #FAF9F6;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+
+
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+}
+
+.project-card-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-card-image img {
+  transform: scale(1.1);
+}
+
+.project-status {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 2;
+}
+
+.status-completed {
+  background: #30c468;
+  color: white;
+}
+
+.status-ongoing {
+  background: #f5576c;
+  color: white;
+}
+
+.status-upcoming {
+  background: #4facfe;
+  color: white;
+}
+
+.project-card-content {
+  padding: 25px;
+  display: flex;             /* Added */
+  flex-direction: column;    /* Added */
+  flex-grow: 1;              /* Added: Fills the remaining vertical space */
+}
+
+.project-card-content h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.project-location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.project-location i {
+  color: #4facfe;
+}
+
+
+
+.project-card-content p {
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+
+  /* 🔹 Add these lines to clamp text to 2 lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* show only 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-meta {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #555;
+  background: #f5f5f5;
+  padding: 6px 12px;
+  border-radius: 15px;
+}
+
+.meta-item i {
+  color: #4facfe;
+  font-size: 12px;
+}
+
+.project-card-btn {
+  margin-top: auto;          /* Added: Pushes the button to the very bottom */
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  background: rgba(255, 174, 25, 0.85);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.project-card-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Speed Controls */
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.speed-btn {
+  background: white;
+  border: 2px solid #667eea;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #667eea;
+}
+
+.speed-btn:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.speed-btn.active {
+  background: #667eea;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #services h2 {
+    font-size: 32px;
+  }
+
+  .project-card {
+    min-width: 300px;
+  }
+
+  .project-card-image {
+    height: 200px;
+  }
+
+  .slider-controls {
+    flex-wrap: wrap;
+  }
+}

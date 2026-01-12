@@ -1,0 +1,23 @@
+# Enable rewrite engine
+RewriteEngine On
+RewriteBase /
+
+# Redirect /index.html to /home (optional)
+RewriteCond %{THE_REQUEST} /index\.html
+RewriteRule ^index\.html$ /home [R=301,L]
+
+# Rewrite /home to index.html internally
+RewriteRule ^home/?$ index.html [L]
+
+# Rewrite project pages (project.html)
+# Example: /project/layout/0 -> project.html?type=layout&id=0
+RewriteRule ^project/([^/]+)/([^/]+)/?$ project.html?type=$1&id=$2 [L,QSA]
+
+# Rewrite projects pages (projects.html)
+# Example: /projects/apartment/ongoing -> projects.html?type=apartment&status=ongoing
+RewriteRule ^projects/([^/]+)/([^/]+)/?$ projects.html?type=$1&status=$2 [L,QSA]
+
+# Optional: remove .html extension for direct access
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
