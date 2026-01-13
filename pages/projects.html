@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Projects - Dharthi Housing</title>
+    <link rel="stylesheet" href="../components/navBar.css?v=3.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/projects/projects-style.css?v=3.1">
+</head>
+
+<body>
+
+  <div id="navbar"></div>
+
+  <div class="body-bg-blur"></div>
+
+  <div class="page-container">
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <h1 class="hero-title" id="page-title">Our Projects</h1>
+      <p class="hero-subtitle">Discover our portfolio of exceptional residential developments</p>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="filter-section" id="filter-section">
+      <div class="filter-pill active" data-status="all">All Projects</div>
+      <div class="filter-pill" data-status="completed">Completed</div>
+      <div class="filter-pill" data-status="ongoing">Ongoing</div>
+      <div class="filter-pill" data-status="upcoming">Upcoming</div>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-grid" id="projects-grid">
+      <div class="loading">
+        <div class="spinner"></div>
+        <p>Loading projects...</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="../data/projectsData.js"></script>
+  <script src="../js/projects/projects.js"></script>
+
+  <script>
+    
+  </script>
+</body>
+</html>

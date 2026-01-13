@@ -27,10 +27,10 @@ const apartmentProjects = [
 const layoutProjects = [
   {
     title: "SLP Pine Valley",
-    desc: "Gated layout with parks and community facilities.",
+    desc: "SLP Pine Valley is a premium project residing under the Town Municipal Corporation (Bidadi) with luxurious and rapidly developing in Smart City Bidadi. The project is surrounded by Toyota, Bosch, Suzuki, & Coca cola. It is a BMRDA approved layout and financed by Major Banks. The project is spread across 19 acres and is the most luxurious and popular property in and around Bidadi. SLP Pine Valley is a well-planned and a posh gated community in Smart City Bidadi.",
     location: "Bidadi",
     details:
-      "SLP Pine Valley is a premium project residing under the Town Municipal Corporation (Bidadi) with luxurious and rapidly developing in Smart City Bidadi. The project is surrounded by Toyota, Bosch, Suzuki, & Coca cola. It is a BMRDA approved layout and financed by Major Banks. The project is spread across 19 acres and is the most luxurious and popular property in and around Bidadi. SLP Pine Valley is a well-planned and a posh gated community in Smart City Bidadi.",
+      "Gated layout with parks and community facilities.",
     status: "completed",
     plotSize: "30X40 (54), 30X40 (136), 60X40 (12), Odd(82), Commercial (1)",
     totalLand: "19 acres",
@@ -63,7 +63,7 @@ const layoutProjects = [
   },
   {
     title: "Narayana Abode",
-    desc: "Project NARAYANA ABODE Phase-2 Recides Near The Mysore Express Way Very Nearly At Kambipura with Luxurious Surrounded by Rapid Development. BDA Approved Layout, Loans Available From The Both Private And Public Sector Banks. Spreading Across 11 Acres. Well Planned And Smartly Developed Gated Community in Bangalore South And Just 12Km From Town Hall.",
+    desc: "Project NARAYANA ABODE Phase-2 is located near the Mysore Expressway, very close to Kumbalgodu, and is surrounded by rapid development. It is a BDA-approved layout, with loans available from both private and public sector banks. The project spans 11 acres and is a well-planned, smartly developed gated community in Bangalore South, just 12 km from Town Hall.",
     location: "Kambipura",
     details:
       "Nearby places includes Global Tech City 11kms, Kengeri Satellite Bus Stand 6kms, Decathlon 2.8kms, Kengeri Mctro Station 5kms, Kengeri Railway Station 6kms, Don Bosco Engineering College 2kms, Marigold International School 2kms",

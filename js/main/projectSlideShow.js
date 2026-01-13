@@ -42,7 +42,7 @@ function createProjectCard(project, index, type) {
       <div class="project-meta">
         ${metaInfo}
       </div>
-      <a href="project.html?type=${type}&id=${index}" class="project-card-btn">View Details</a>
+      <a href="pages/project.html?type=${type}&id=${index}" class="project-card-btn">View Details</a>
     </div>
   `;
   

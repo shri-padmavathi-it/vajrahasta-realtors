@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Details</title>
+  <link rel="icon" type="image/png" href="Assests/initial_logo_icon-removebg-preview.png">
+  <link rel="stylesheet" href="../components/navBar.css?v=3.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style/project/project-style.css?v=1.2">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Background Blur -->
+  <div class="body-bg-blur" id="body-bg-blur"></div>
+  
+  <div class="container">
+    <!-- Hero Section - Images Only -->
+    <div class="hero-section">
+      <div class="slideshow-wrapper" id="slideshow">
+        <button class="slide-btn left" id="prev-btn">‹</button>
+        <button class="slide-btn right" id="next-btn">›</button>
+        <div class="slide-indicators" id="indicators"></div>
+      </div>
+    </div>
+
+    <div class="content-grid">
+      <div class="main-content">
+        <!-- Project Header moved inside About section -->
+        <div class="project-header">
+          <h1 class="project-title" id="project-title">Project Title</h1>
+          <div class="project-location" id="project-location">Location</div>
+          <div class="status-badge" id="status-badge">Status</div>
+        </div>
+
+        <h2 class="section-title">About This Project</h2>
+        <p class="description" id="project-desc">Project description...</p>
+        <p class="description" id="project-details">Project details...</p>
+      </div>
+
+      <div class="sidebar">
+        <h2 class="section-title">Quick Info</h2>
+        <div class="quick-info" id="quick-info"></div>
+      </div>
+    </div>
+
+    <div class="amenities-section">
+      <h2 class="section-title">Amenities & Features</h2>
+      <div class="amenities-grid" id="amenities-grid"></div>
+    </div>
+
+    <div class="contact-button-wrapper">
+      <a href="#" class="contact-button" id="contact-btn">Interested? Contact Us</a>
+    </div>
+  </div>
+
+  <script src="../data/projectsData.js"></script>
+  <script src="../js/project/project.js"> </script>
+</body>
+</html>
