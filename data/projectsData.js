@@ -17,9 +17,9 @@ const apartmentProjects = [
       "Walking Area",
     ],
     images: [
-      "Assests/Dharthi-Isiri/dharthiIsiri1.png",
-      "Assests/Dharthi-Isiri/dharthiIsiri2.png",
-      "Assests/Dharthi-Isiri/dharthiIsiri3.png",
+      "/Assests/Dharthi-Isiri/dharthiIsiri1.png",
+      "/Assests/Dharthi-Isiri/dharthiIsiri2.png",
+      "/Assests/Dharthi-Isiri/dharthiIsiri3.png",
     ],
   },
 ];
@@ -51,14 +51,14 @@ const layoutProjects = [
       "Street Lights",
     ],
     images: [
-      "Assests/SLP Pine Vallay/SLP1.jpg",
-      "Assests/SLP Pine Vallay/SLP2.jpg",
-      "Assests/SLP Pine Vallay/SLP3.jpg",
-      "Assests/SLP Pine Vallay/SLP4.jpg",
-      "Assests/SLP Pine Vallay/SLP5.jpg",
-      "Assests/SLP Pine Vallay/SLP6.jpg",
-      "Assests/SLP Pine Vallay/SLP7.jpg",
-      "Assests/SLP Pine Vallay/SLP8.jpg",
+      "/Assests/SLP Pine Vallay/SLP1.jpg",
+      "/Assests/SLP Pine Vallay/SLP2.jpg",
+      "/Assests/SLP Pine Vallay/SLP3.jpg",
+      "/Assests/SLP Pine Vallay/SLP4.jpg",
+      "/Assests/SLP Pine Vallay/SLP5.jpg",
+      "/Assests/SLP Pine Vallay/SLP6.jpg",
+      "/Assests/SLP Pine Vallay/SLP7.jpg",
+      "/Assests/SLP Pine Vallay/SLP8.jpg",
     ],
   },
   {
@@ -85,9 +85,9 @@ const layoutProjects = [
       "Electricity",
     ],
     images: [
-      "Assests/Narayana Abode/narayana1.jpg",
-      "Assests/Narayana Abode/narayana2.jpg",
-      "Assests/Narayana Abode/narayana3.jpg",
+      "/Assests/Narayana Abode/narayana1.jpg",
+      "/Assests/Narayana Abode/narayana2.jpg",
+      "/Assests/Narayana Abode/narayana3.jpg",
     ],
   },
   {
@@ -112,12 +112,12 @@ const layoutProjects = [
       "Kaveri Water Supply",
     ],
     images: [
-      "Assests/SA Lake View Meadows/SALake3.jpg",
-      "Assests/SA Lake View Meadows/SALake4.jpg",
-      "Assests/SA Lake View Meadows/SALake5.jpg",
-      "Assests/SA Lake View Meadows/SALake6.jpg",
-      "Assests/SA Lake View Meadows/SALake7.jpg",
-      "Assests/SA Lake View Meadows/SALake8.jpg",
+      "/Assests/SA Lake View Meadows/SALake3.jpg",
+      "/Assests/SA Lake View Meadows/SALake4.jpg",
+      "/Assests/SA Lake View Meadows/SALake5.jpg",
+      "/Assests/SA Lake View Meadows/SALake6.jpg",
+      "/Assests/SA Lake View Meadows/SALake7.jpg",
+      "/Assests/SA Lake View Meadows/SALake8.jpg",
     ],
   },
   {
@@ -142,9 +142,9 @@ const layoutProjects = [
       "Kaveri Water Supply",
     ],
     images: [
-      "Assests/Aralalu/aralalu1.jpg",
-      "Assests/Aralalu/aralalu2.jpg",
-      "Assests/Aralalu/aralalu3.png",
+      "/Assests/Aralalu/aralalu1.jpg",
+      "/Assests/Aralalu/aralalu2.jpg",
+      "/Assests/Aralalu/aralalu3.png",
     ],
   },
   {
@@ -165,7 +165,7 @@ const layoutProjects = [
       "Street Lights",
       "Garden Area",
     ],
-    images: ["Assests/gudumavu/gudimavu1.png"],
+    images: ["/Assests/gudumavu/gudimavu1.png"],
   },
   {
     title: "Ijuru",
@@ -188,7 +188,7 @@ const layoutProjects = [
       "Compound Wall",
       "Kaveri Water Supply",
     ],
-    images: ["Assests/Ijuru/Ijuru1.png"],
+    images: ["/Assests/Ijuru/Ijuru1.png"],
   },
   {
     title: "Komanahalli",
@@ -208,6 +208,6 @@ const layoutProjects = [
       "Street Lights",
       "Garden Area",
     ],
-    images: ["Assests/Komanahalli/Komanahalli1.png"],
+    images: ["/Assests/Komanahalli/Komanahalli1.png"],
   },
 ];
