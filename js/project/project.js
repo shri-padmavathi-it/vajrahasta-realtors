@@ -23,9 +23,9 @@
     // Change background based on type
     const bgDiv = document.getElementById("body-bg-blur");
     if (type === "apartment") {
-      bgDiv.style.background = "url('Assests/Gemini_Generated_Image_txmu73txmu73txmu-removebg-preview.png') center center/cover no-repeat";
+      bgDiv.style.background = "url('/Assests/Gemini_Generated_Image_txmu73txmu73txmu-removebg-preview.png') center center/cover no-repeat";
     } else if (type === "layout") {
-      bgDiv.style.background = "url('Assests/layout images/IMG-20251016-WA0020.jpg') center center/cover no-repeat";
+      bgDiv.style.background = "url('/Assests/layout images/IMG-20251016-WA0020.jpg') center center/cover no-repeat";
     }
 
     // Render project if found
