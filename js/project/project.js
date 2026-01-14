@@ -141,7 +141,7 @@
 
       // Contact button with pre-filled subject
       const contactBtn = document.getElementById('contact-btn');
-      contactBtn.href = `index.html#contact`;
+      contactBtn.href = `/index.html#contact`;
       contactBtn.onclick = (e) => {
         // Store the project title in sessionStorage
         sessionStorage.setItem('contactSubject', `Inquiry about ${project.title}`);
