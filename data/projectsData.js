@@ -169,7 +169,7 @@ const layoutProjects = [
   },
   {
     title: "Ijuru",
-    desc: "Discover 'Ijuru' — an upcoming premium residential layout by Dharthi Housing Infrastructure, located in the peaceful surroundings of Ramanagara. Thoughtfully crafted to provide modern living in a calm and well-connected environment, Ijuru offers an ideal opportunity for families and investors seeking quality residential plots.",
+    desc: "Discover 'Ijuru' — an upcoming premium residential layout, located in the peaceful surroundings of Ramanagara. Thoughtfully crafted to provide modern living in a calm and well-connected environment, Ijuru offers an ideal opportunity for families and investors seeking quality residential plots.",
     location: "Ramanagara",
     details:
       "Spread across 2 acres and 38 guntas in Ijuru Village, this well-planned layout features a perfect mix of plot dimensions — 18 plots of 30x40 ft, 18 plots of 30x50 ft, 8 plots of 30x35 ft, and 9 odd sites. The project is being developed as a gated community with blacktop roads, underground water and sewage lines, landscaped gardens, and a dedicated overhead water tank. Designed to combine nature and convenience, 'Ijuru' ensures a serene neighborhood equipped with all essential amenities for comfortable living.",
@@ -192,7 +192,7 @@ const layoutProjects = [
   },
   {
     title: "Komanahalli",
-    desc: "An upcoming residential layout by Dharthi Housing Infrastructure located in the tranquil surroundings of Channapatna. Designed for modern living, the project combines well-planned plots with essential amenities to offer a secure and comfortable community lifestyle.",
+    desc: "An upcoming residential layout located in the tranquil surroundings of Channapatna. Designed for modern living, the project combines well-planned plots with essential amenities to offer a secure and comfortable community lifestyle.",
     location: "Channapatna",
     details:
       "Spread over a thoughtfully planned area in Komanahalli, the layout offers 8 plots of 8m × 12m (~26 × 39 ft) along with 40 odd sites, making it ideal for families and investors looking for flexible residential options. The gated community features blacktop roads, underground water and sewage systems, landscaped parks, street lighting, and a dedicated overhead water tank. 'Komanahalli' ensures a harmonious living environment with all modern conveniences while maintaining a serene neighborhood feel.",
