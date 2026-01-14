@@ -147,7 +147,6 @@ body {
 @media (max-width: 900px) {
   #home {
     flex-direction: column;
-    padding-top: 70px;
   }
 
   .home-text {
