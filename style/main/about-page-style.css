@@ -1,7 +1,7 @@
 /* Section Background */
 #about {
   background: #FAF9F6;
-  padding: 120px 0;
+  padding: 50px 0;
   color: #333;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -50,6 +50,19 @@
 .stat-box:hover {
   transform: translateY(-8px) scale(1.04);
   box-shadow: 0 8px 32px rgba(122, 44, 178, 0.12);
+}
+
+.about-logo {
+  width: 250px;
+  margin-bottom: 20px;
+  
+}
+
+.border-container {
+   background-color: #FAF9F6;
+   display: flex;
+   justify-content: center;
+   padding: 0px 50px;
 }
 
 .stat-box h3 {
