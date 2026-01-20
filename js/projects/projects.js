@@ -25,9 +25,9 @@
       allProjects = layoutProjects.map((p, i) => ({ ...p, type: 'layout', id: i }));
       document.getElementById('page-title').textContent = 'Layout Projects';
       bgElement.style.backgroundImage = "url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200')";
-    } else if (type === "formland") {
-      allProjects = formlandProjects.map((p, i) => ({ ...p, type: 'formland', id: i }));
-      document.getElementById('page-title').textContent = 'Formland Projects';
+    } else if (type === "farmland") {
+      allProjects = formlandProjects.map((p, i) => ({ ...p, type: 'farmland', id: i }));
+      document.getElementById('page-title').textContent = 'Farmland Projects';
       bgElement.style.backgroundImage = "url('/Assests/formland_Project_bg.jpg')";
     } else {
       allProjects = [

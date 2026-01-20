@@ -18,7 +18,7 @@
       project = apartmentProjects[id];
     } else if (type === "layout") {
       project = layoutProjects[id];
-    } else if (type === "formland") {
+    } else if (type === "farmland") {
       project = formlandProjects[id];
     }
 
@@ -29,7 +29,7 @@
     } else if (type === "layout") {
       bgDiv.style.background = "url('/Assests/layout images/IMG-20251016-WA0020.jpg') center center/cover no-repeat";
     }
-    else if (type === "formland") {
+    else if (type === "farmland") {
       bgDiv.style.background = "url('/Assests/formland_Project_bg.jpg') center center/cover no-repeat";
     }
 

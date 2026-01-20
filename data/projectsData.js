@@ -158,7 +158,7 @@ const layoutProjects = [
     ],
   },
   {
-    title: "KLM Enclove",
+    title: "KLM Enclave",
     desc: "A premium residential layout nestled in the serene surroundings of Kanakapura. Designed as a well-planned gated community with modern infrastructure, this project offers a perfect blend of comfort, connectivity, and convenience for modern living.",
     location: "kanakapura",
     details:
