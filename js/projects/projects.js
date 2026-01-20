@@ -28,7 +28,7 @@
     } else if (type === "formland") {
       allProjects = formlandProjects.map((p, i) => ({ ...p, type: 'formland', id: i }));
       document.getElementById('page-title').textContent = 'Formland Projects';
-      bgElement.style.backgroundImage = "url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200')";
+      bgElement.style.backgroundImage = "url('/Assests/formland_Project_bg.jpg')";
     } else {
       allProjects = [
         ...apartmentProjects.map((p, i) => ({ ...p, type: 'apartment', id: i })),
