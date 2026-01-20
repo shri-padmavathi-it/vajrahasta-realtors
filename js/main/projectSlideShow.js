@@ -17,6 +17,9 @@ function createProjectCard(project, index, type) {
   if (project.plotSize) {
     metaInfo = `<div class="meta-item"><i class="fa-solid fa-ruler-combined"></i> ${project.plotSize}</div>`;
   }
+  if (project.Plots) {
+    metaInfo += `<div class="meta-item"><i class="fa-solid fa-ruler-combined"></i> ${project.Plots}</div>`;
+  }
   if (project.Units) {
     metaInfo += `<div class="meta-item"><i class="fa-solid fa-building"></i> ${project.Units} Units</div>`;
   }
@@ -67,6 +70,10 @@ function initializeProjectsSlider() {
   layoutProjects.forEach((project, index) => {
     sliderTrack.appendChild(createProjectCard(project, index, 'layout'));
   });
+
+   formlandProjects.forEach((project, index) => {
+    sliderTrack.appendChild(createProjectCard(project, index, 'farmland'));
+  });
   
   // Duplicate cards for seamless infinite loop
   apartmentProjects.forEach((project, index) => {
@@ -75,6 +82,11 @@ function initializeProjectsSlider() {
   
   layoutProjects.forEach((project, index) => {
     sliderTrack.appendChild(createProjectCard(project, index, 'layout'));
+  });
+
+ 
+  formlandProjects.forEach((project, index) => {
+    sliderTrack.appendChild(createProjectCard(project, index, 'farmland'));
   });
 }
 
