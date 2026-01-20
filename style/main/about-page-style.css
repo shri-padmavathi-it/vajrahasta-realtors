@@ -28,28 +28,88 @@
   margin-bottom: 30px;
 }
 
-/* Stats */
+/* Stats Container */
 .about-stats {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin: 40px 0 50px 0;
   flex-wrap: wrap;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Example Font */
 }
 
+/* Individual Box */
 .stat-box {
-  background: #fff;
-  padding: 28px 36px;
-  border-radius: 18px;
-  box-shadow: 0 4px 16px rgba(122, 44, 178, 0.08);
-  width: 230px;
-  transition: transform 0.3s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.3s;
-  text-align: center;
+  background: #ffffff;
+  border-radius: 20px; /* Softer curves */
+  width: 240px;        /* Fixed Width */
+  height: 160px;       /* Fixed Height */
+  
+  /* Flex settings for layout logic */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  /* Visual styling */
+  box-shadow: 0 10px 30px rgba(122, 44, 178, 0.05); /* Softer, spread out shadow */
+  border: 1px solid rgba(122, 44, 178, 0.05); /* Very subtle border */
+  border-bottom: 4px solid #b2932c; /* Accent line at bottom */
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
 }
 
+/* The Value (H3) - Centers in remaining space */
+.stat-box h3 {
+  /* Flex-grow 1 makes this element fill all available vertical space */
+  flex-grow: 1; 
+  display: flex;
+  align-items: center; /* Vertically center text inside this expanded space */
+  justify-content: center;
+  flex-direction: column;
+  
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 800;
+  
+  /* Gradient Text Effect */
+  background: linear-gradient(135deg, #b29e2c 0%, #d6a955 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Small unit text (sq. ft.) styling */
+.stat-box h3 .unit {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #888; /* Fallback color */
+  -webkit-text-fill-color: #888; /* Overrides gradient for unit text */
+  margin-top: 2px;
+}
+
+/* The Label (P) - Sticks to bottom */
+.stat-box p {
+  /* No flex-grow ensures it only takes necessary space at bottom */
+  flex-grow: 0; 
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 15px 10px; /* Padding creates the "stuck to bottom" visual */
+  
+  color: #666;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px; /* Makes labels look more premium */
+  font-weight: 600;
+  background-color: #fafafa; /* Subtle background for the label area */
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Hover Effects */
 .stat-box:hover {
-  transform: translateY(-8px) scale(1.04);
-  box-shadow: 0 8px 32px rgba(122, 44, 178, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(122, 44, 178, 0.15);
 }
 
 .about-logo {

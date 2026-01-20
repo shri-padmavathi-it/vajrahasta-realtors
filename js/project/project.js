@@ -18,6 +18,8 @@
       project = apartmentProjects[id];
     } else if (type === "layout") {
       project = layoutProjects[id];
+    } else if (type === "formland") {
+      project = formlandProjects[id];
     }
 
     // Change background based on type
@@ -26,6 +28,9 @@
       bgDiv.style.background = "url('/Assests/Gemini_Generated_Image_txmu73txmu73txmu-removebg-preview.png') center center/cover no-repeat";
     } else if (type === "layout") {
       bgDiv.style.background = "url('/Assests/layout images/IMG-20251016-WA0020.jpg') center center/cover no-repeat";
+    }
+    else if (type === "formland") {
+      bgDiv.style.background = "url('/Assests/formland_Project_bg.jpg') center center/cover no-repeat";
     }
 
     // Render project if found
@@ -46,9 +51,15 @@
       const infoItems = [];
       
       if (project.Units) infoItems.push({ label: 'Units', value: project.Units });
+      if (project.Plots) infoItems.push({ label: 'Plots', value: project.Plots });
       if (project.floors) infoItems.push({ label: 'Floors', value: project.floors });
       if (project.plotSize) infoItems.push({ label: 'Plot Size', value: project.plotSize });
       if (project.totalLand) infoItems.push({ label: 'Total Land', value: project.totalLand });
+      if(project.quickInfo) {
+        project.quickInfo.forEach(info => {
+          infoItems.push({ label: "", value: info });
+        });
+      }
 
       infoItems.forEach(item => {
         quickInfo.innerHTML += `
@@ -84,7 +95,12 @@
         'Visitors Parking': '🅿️',
         'Rainwater Harvesting': '🌧️',
         'Box Drains': '🔧',
-        'Kaveri Water Supply': '💦'
+        'Kaveri Water Supply': '💦',
+        'Nature Walkways': '🌿',
+        'Senior Leisure Park': '🌳',
+        'Jogging & Fitness Trail': '🏃',
+        'Relaxation Zones': '🧘',
+        '6 Private cottage for overnight stay': '🏡'
       };
 
       // Build amenities

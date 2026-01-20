@@ -24,6 +24,43 @@ const apartmentProjects = [
   },
 ];
 
+const formlandProjects = [
+   {
+    title: "Nalanda Eco Valley",
+    desc: "Nalanda Eco Valley is created for those who seek more than ownership for those who value space, stillness, and freedom.Set within the serene Ramanagara Hill Valley, each privately owned farmland plot is designed for retreat, hosting, and quiet escapes enjoyed entirely on your terms.",
+    location: "Mayaganahalli",
+    Plots: "80",
+    plotSize: "5.5 to 18 Guntas",
+    quickInfo: [
+      "Mature mango groves and fertile soil", "Strong groundwater availability", "Designed for farm living, cultivation, and retreat"
+    ],
+    details:
+      "Surrounded by mature mango groves and open skies, the estateenables a true Work From a Farm lifestyle, where focus, balance, and nature coexist.",
+    status: "ongoing",
+    amenities: [
+      "Nature Walkways",
+      "Senior Leisure Park",
+      "Jogging & Fitness Trail",
+      "Relaxation Zones",
+      "Landscaped Gardens",
+      "6 Private cottage for overnight stay",
+    ],
+    images: [
+      "/Assests/Nalanda-Eco-Valley/Presentation - NALANDA ECO VALLEY_page-0001.jpg",
+      "/Assests/Nalanda-Eco-Valley/Presentation - NALANDA ECO VALLEY_page-0002.jpg",
+      "/Assests/Nalanda-Eco-Valley/Presentation - NALANDA ECO VALLEY_page-0003.jpg",
+      "/Assests/Nalanda-Eco-Valley/Presentation - NALANDA ECO VALLEY_page-0004.jpg",
+      "/Assests/Nalanda-Eco-Valley/Presentation - NALANDA ECO VALLEY_page-0005.jpg",
+      "/Assests/Nalanda-Eco-Valley/Presentation - NALANDA ECO VALLEY_page-0006.jpg",
+      "/Assests/Nalanda-Eco-Valley/Presentation - NALANDA ECO VALLEY_page-0007.jpg",
+      "/Assests/Nalanda-Eco-Valley/Presentation - NALANDA ECO VALLEY_page-0008.jpg",
+      "/Assests/Nalanda-Eco-Valley/Presentation - NALANDA ECO VALLEY_page-0009.jpg",
+      "/Assests/Nalanda-Eco-Valley/Presentation - NALANDA ECO VALLEY_page-0010.jpg",
+    ],
+  },
+];
+
+
 const layoutProjects = [
   {
     title: "SLP Pine Valley",
@@ -93,11 +130,11 @@ const layoutProjects = [
   {
     title: "SA Lake View Meadows",
     desc: "Premium plots with wide roads and utilities.",
-    location: "Kambipura",
+    location: "Ramanagara",
     details:
       "SA Lake View Meadows is a premium project residing under Nagarasabha Ward No-31 Ramanagara. The project is attached to upcoming Rajiv Gandhi University, it is Ramanagara Channapatna Urban Development Authority (RCUDA) approved layout and approved by Major Banks. The Project is spread around 4 Acre 20 guntas, SA Lake View Meadows is well planned and gated community in greater Bangalore Ramangara.",
     status: "ongoing",
-    plotSize: "40X60, 60X80",
+    plotSize: "30 X 40, 40 X 40, 30 X 30",
     totalLand: "4 acres and 20 guntas",
     amenities: [
       "Gated Community",
@@ -121,7 +158,7 @@ const layoutProjects = [
     ],
   },
   {
-    title: "Aralalu",
+    title: "KLM Enclove",
     desc: "A premium residential layout nestled in the serene surroundings of Kanakapura. Designed as a well-planned gated community with modern infrastructure, this project offers a perfect blend of comfort, connectivity, and convenience for modern living.",
     location: "kanakapura",
     details:
@@ -148,11 +185,11 @@ const layoutProjects = [
     ],
   },
   {
-    title: "Gudimanu",
-    desc: "An ongoing premium residential layout located in the serene surroundings of Gudimanu, Bangalore. The project is designed to offer a secure and modern living environment, combining thoughtfully planned plots with essential amenities for comfortable community living.",
-    location: "Gudimanu, Banglore",
+    title: "Goloka Anura",
+    desc: "An ongoing premium residential layout located in the serene surroundings of Gudimavu, Bangalore. The project is designed to offer a secure and modern living environment, combining thoughtfully planned plots with essential amenities for comfortable community living.",
+    location: "Kumbalgodu",
     details:
-      "Spread across a well-planned area in Gudimanu, the layout features a mix of plot sizes to suit different requirements: 1 plot of 30×35 ft, 2 plots of 30×50 ft, 3 plots of 40×50 ft, 10 plots of 40×55 ft, and 28 odd sites. The gated community includes blacktop roads, landscaped parks, street lighting, water lines, and a sewage treatment system. 'Gudimanu' is designed to offer a tranquil and well-connected neighborhood, ideal for families and investors seeking quality residential options.",
+      "Spread across a well-planned area in Gudimavu, the layout features a mix of plot sizes to suit different requirements: 1 plot of 30×35 ft, 2 plots of 30×50 ft, 3 plots of 40×50 ft, 10 plots of 40×55 ft, and 28 odd sites. The gated community includes blacktop roads, landscaped parks, street lighting, water lines, and a sewage treatment system. 'Gudimanu' is designed to offer a tranquil and well-connected neighborhood, ideal for families and investors seeking quality residential options.",
     status: "ongoing",
     plotSize: "30 X 35 (01), 30 X 50 (02), 40 X 50 (03), 40 X 55 (10) and Odd sites (28)",
     totalLand: "",
